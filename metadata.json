@@ -1,0 +1,6 @@
+{
+  "name": "EduDoc DMS — Система за документооборот",
+  "description": "Уеб система за съхранение, версиониране, одит и контролиран достъп до учебна документация с одобрителен работен процес за училища и учебни заведения.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

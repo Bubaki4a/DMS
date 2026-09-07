@@ -1,0 +1,136 @@
+import { DocumentCategory, DocumentCategoryId, Subject, TargetGrade, User } from '../types';
+
+export const CATEGORIES: DocumentCategory[] = [
+  {
+    id: 'curriculum',
+    label: 'Учебни планове и програми',
+    description: 'Годишни тематични разпределения, учебни програми и графици по МОН',
+    color: 'blue',
+    iconName: 'BookOpen',
+  },
+  {
+    id: 'syllabi',
+    label: 'Конспекти и учебни материали',
+    description: 'Лекционни записки, презентации, обобщени теми и конспекти за изпити',
+    color: 'emerald',
+    iconName: 'FileText',
+  },
+  {
+    id: 'exam_materials',
+    label: 'Тестове и изпитни материали',
+    description: 'Контролни работи, примерни тестове за ДЗИ, НВО и входни/изходни нива',
+    color: 'amber',
+    iconName: 'CheckSquare',
+  },
+  {
+    id: 'homework_projects',
+    label: 'Домашни работи и проекти',
+    description: 'Учебни проекти, казуси, курсови задачи и ученически разработки',
+    color: 'purple',
+    iconName: 'FolderGit2',
+  },
+  {
+    id: 'admin_orders',
+    label: 'Административни заповеди и правилници',
+    description: 'Заповеди на директора, Правилник за дейността на училището, План за БДП',
+    color: 'rose',
+    iconName: 'ShieldAlert',
+  },
+  {
+    id: 'pedagogical_protocols',
+    label: 'Протоколи от Педагогически съвет',
+    description: 'Решения от заседания, протоколи за стипендии и училищни комисии',
+    color: 'indigo',
+    iconName: 'ClipboardList',
+  },
+  {
+    id: 'forms_templates',
+    label: 'Бланки и служебни формуляри',
+    description: 'Заявления за отсъствия, служебни бележки, декларации и бланки за родители',
+    color: 'cyan',
+    iconName: 'FileCheck',
+  },
+  {
+    id: 'olympiad_competitions',
+    label: 'Олимпиади и състезания',
+    description: 'Регламенти, задачи от минали години, протоколи за класиране и награди',
+    color: 'orange',
+    iconName: 'Trophy',
+  },
+];
+
+export const SUBJECTS: Subject[] = [
+  'Математика',
+  'Български език и литература',
+  'Информатика и ИТ',
+  'История и цивилизации',
+  'Английски език',
+  'Физика и астрономия',
+  'Биология и ЗО',
+  'Химия и ООС',
+  'Общоучилищни',
+  'Администрация',
+];
+
+export const TARGET_GRADES: TargetGrade[] = [
+  'Всички класове',
+  '8 клас',
+  '9 клас',
+  '10 клас',
+  '11 клас',
+  '12 клас',
+  'Педагогически съвет',
+  'Административно ръководство',
+];
+
+export const INITIAL_USERS: User[] = [
+  {
+    id: 'user_admin_1',
+    name: 'инж. Иван Петров',
+    role: 'admin',
+    email: 'director.petrov@school-dms.bg',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    positionTitle: 'Директор и Главен администратор',
+    department: 'Училищно ръководство',
+  },
+  {
+    id: 'user_teacher_1',
+    name: 'д-р Мария Георгиева',
+    role: 'teacher',
+    email: 'm.georgieva@school-dms.bg',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+    positionTitle: 'Старши учител по Математика',
+    subjectSpecialty: 'Математика и Информатика',
+    department: 'Природо-математически науки',
+  },
+  {
+    id: 'user_teacher_2',
+    name: 'Пламен Димитров',
+    role: 'teacher',
+    email: 'p.dimitrov@school-dms.bg',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    positionTitle: 'Учител по БЕЛ и Литература',
+    subjectSpecialty: 'Български език и литература',
+    department: 'Хуманитарни науки',
+  },
+  {
+    id: 'user_student_1',
+    name: 'Александър Димитров',
+    role: 'student',
+    email: 'alex.dimitrov@student.school-dms.bg',
+    avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&auto=format&fit=crop&q=80',
+    positionTitle: 'Ученик',
+    grade: '11А клас',
+    department: 'Профил „Софтуерни науки“',
+  },
+  {
+    id: 'user_student_2',
+    name: 'Елена Стоянова',
+    role: 'student',
+    email: 'elena.stoyanova@student.school-dms.bg',
+    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80',
+    positionTitle: 'Ученик',
+    grade: '12Б клас',
+    department: 'Профил „Хуманитарен“',
+  },
+];
